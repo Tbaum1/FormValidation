@@ -1,0 +1,33 @@
+<!DOCTYPE html>        
+<html>
+    <head>  
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form Validation</title>    
+        <meta name="viewport" content="width=device-width, initial-scale=1">           
+    </head>
+
+    <body>
+        <form>
+            <label for="name">Name:</label> 
+            <input type="text" name="name" id="name" >
+            <label for="email">Email:</label> 
+            <input type="text" name="email" id="email" >
+            <label for="phone">Phone numnber:</label> 
+            <input type="text" name="phone" id="phone" >
+            <input type="radio" id="male" name="group" value="Male">Male
+            <input type="radio" id="female" name="group" value="Female">Female
+            </br>
+            <label for="list">Phone numnber:</label> 
+            <select class="list" id="list">
+                <option value="Springfield">Springfield</option> 
+                <option value="Ozark">Ozark</option> 
+                <option value="Waynesville">Waynesville</option> 
+            </select> 
+            <input type="submit" name="submit this" value="submit" onclick="return checkForm(this.form)"> 
+                        
+        </form>
+        <div id="error" style="display:none"><p></p></div>
+        <script src="app.js"></script>
+    </body>
+</html>
