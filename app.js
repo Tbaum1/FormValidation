@@ -11,7 +11,7 @@ function checkForm(frm){                                    // Checks for invali
         isValid = false;
         frm.name.focus();
         frm.name.style.background = "#f44b42";  
-        error.innerHTML += "Required fields are missing. " + gender;
+        error.innerHTML += "Required fields are missing. ";
         error.style.display = "block";        
     }else{
         frm.name.style.background = "";  
