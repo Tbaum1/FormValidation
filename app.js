@@ -31,7 +31,8 @@ function checkForm(frm){                                    // Checks for invali
         error.style.display = "block";
         isValid = false;
     }
-    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(frm.email.value)){   // Verifies that email is a valid email.    
+    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(frm.email.value))     // Verifies that email is a valid email.
+    {       
         frm.email.style.background = "";       
     }else{
         frm.email.style.background = "#f44b42";
@@ -48,7 +49,6 @@ function checkForm(frm){                                    // Checks for invali
         error.innerHTML += "You have entered an invalid Phone Number. ";
         error.style.display = "block";
         isValid = false;
-
     }
     return isValid;
 }
