@@ -50,6 +50,7 @@ function checkForm(frm){                                    // Checks for invali
         error.style.display = "block";
         isValid = false;
     }
+    
     return isValid;
 }
 
